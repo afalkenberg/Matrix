@@ -1,0 +1,4 @@
+There are mainly two classes the Matrix class and the Determinante class. 
+The Determinante is derived from Matrix and implements a better way of 
+calcualating the Determinant. 
+Several Matrix opertations are implemented. 
