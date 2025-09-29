@@ -19,7 +19,7 @@ The Matrix class can do inversion, cholesky, determinant, covariance matrix and 
 I will add some more comments as we go. 
 
 
-Greetings 
+Greetings and God bless
  Andreas Falkenberg
  
  
