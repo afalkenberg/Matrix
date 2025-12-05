@@ -36,49 +36,33 @@
 
 #include <iostream>
 
-class Mat
-{
+class Mat {
 
 public:
-	
 	int   N = 2; 
-
 	float** m; //  [2][2];
-
-	 
 	Mat();
 	~Mat(); 
-
 	Mat(int s);
-
 	Mat copy();
-
 	Mat operator* (float f);   // M * 1.2
 	friend Mat operator* (float f, Mat rhs);  // 1.2 * M 
-
 	Mat operator* (Mat f);   // M * M 
 	Mat operator+ (Mat f);   // M + M 
 	Mat operator- (Mat f);   // M - M 
 
 	friend Mat operator/ (float f, Mat rhs);   // 1.2 / M which is Mat inversion 
-
-
 	Mat operator/ (Mat f);    // M / M         // need Mat inversion first 
-
 
 	float det();   // determinante 
 	Mat  adj();
 	Mat  cof();
 	Mat  trans();
 	Mat  subMatrix(int i, int j); // select a N-1 matrix without the provided row and columns 
-
 	// cholesky decomposition
 	bool testSymmetry(); 
 	Mat  cholesky();  
-
 	friend std::ostream& operator<< (std::ostream &os, const Mat &v);
-
-
-
 };
+
 
