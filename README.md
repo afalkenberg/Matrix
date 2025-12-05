@@ -1,8 +1,9 @@
 
-
 There are mainly two classes the Matrix class and the Determinante class. 
 The Determinante is derived from Matrix and implements a better way of 
 calcualating the Determinant. 
+Matrix calculation is fundamentally important in modern AI models. 
+
 Several Matrix opertations are implemented. 
 
 Run test main as follows:
