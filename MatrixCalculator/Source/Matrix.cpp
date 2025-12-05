@@ -33,70 +33,46 @@ Mat::Mat(void)
 	}
 
 	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++)
-		{
+		for (int j = 0; j < N; j++) {
 			m[i][j] = 0.0;
 		}
 	}
 }
 
 
-Mat::~Mat()
-{
-
+Mat::~Mat() {
 	//for (int i = 0; i < N; i++)
 	//{
 	//	delete m[i]; 
 	//}
 	//delete m; 
-
 }
 
-
-
-Mat::Mat(int s)
-{
-
+Mat::Mat(int s) {
 	N = s; 
-
 	m = new float*[N];
-	for (int i = 0; i < N; i++)
-	{
+	for (int i = 0; i < N; i++) {
 		m[i] = new float[N]; 
 	}
-
-
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
+	
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
 			m[i][j] = 0.0;
 		}
 	}
-
-
-
 };
 
-
-Mat Mat::copy()
-{
+Mat Mat::copy() {
 	Mat x(N);
-
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
 			x.m[i][j] = m[i][j];
 		}
 	}
 	return x;
 }
 
-
-
-Mat  Mat::operator+ (Mat f)
-{
+Mat  Mat::operator+ (Mat f) {
 	Mat x(N);
 
 	for (int i = 0; i < N; i++)  // row left Mat 
