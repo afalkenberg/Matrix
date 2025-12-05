@@ -18,7 +18,7 @@ should then give you the example outputs.
 
 The Matrix class can do inversion, cholesky, determinant, covariance matrix and so on. 
 I will add some more comments as we go. 
-
+Cool!
 
 Greetings and God bless
  Andreas Falkenberg
