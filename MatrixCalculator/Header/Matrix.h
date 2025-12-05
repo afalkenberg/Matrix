@@ -19,7 +19,6 @@
 //    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-
 /* The Matrix Calculation Classes perform some matrix algoithms. 
    Besides elementwise operations like + and - also the following are implemented: 
 
@@ -33,8 +32,6 @@
    submatrix 
    Symmetrie Test 
    Cholesky Decomposition
-
-
 */
 
 #include <iostream>
@@ -84,3 +81,4 @@ public:
 
 
 };
+
