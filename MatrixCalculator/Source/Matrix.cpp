@@ -18,7 +18,6 @@
 //    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-
 #include "Matrix.h"
 
 #include <iostream>
@@ -29,14 +28,11 @@ Mat::Mat(void)
 	N = 2;
 
 	m = new float*[N];
-	for (int i = 0; i < N; i++)
-	{
+	for (int i = 0; i < N; i++) {
 		m[i] = new float[N];
 	}
 
-
-	for (int i = 0; i < N; i++)
-	{
+	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++)
 		{
 			m[i][j] = 0.0;
